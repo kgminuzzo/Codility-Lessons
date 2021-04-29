@@ -15,6 +15,12 @@ public class Main {
         //System.out.print(new OddNumbers().solution(new int[]{9,3,9,3,9,7,9}));
 
         //FROG JUMPS
-        System.out.print(new FrogJumps().solution(30,40,0));
+        //System.out.print(new FrogJumps().solution(30,40,0));
+
+        //PERM MISSING ELEMENT
+        //System.out.println(new PermMissingElem().solution(new int[]{5,1,2,3}));
+
+        //TAPE EQUILIBRIUM
+        System.out.println(new TapeEquilibrium().solution(new int[]{2000,100}));
     }
 }
