@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Arrays;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -21,6 +19,9 @@ public class Main {
         //System.out.println(new PermMissingElem().solution(new int[]{5,1,2,3}));
 
         //TAPE EQUILIBRIUM
-        System.out.println(new TapeEquilibrium().solution(new int[]{2000,100}));
+        //System.out.println(new TapeEquilibrium().solution(new int[]{2000,100}));
+
+        //FROG RIVER
+        System.out.println(new FrogRiverOne().solution(1, new int[] {1}));
     }
 }
