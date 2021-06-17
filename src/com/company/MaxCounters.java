@@ -55,8 +55,26 @@ Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized cop
 package com.company;
 
 public class MaxCounters {
+
     public int[] solution(int N, int[] A) {
-        //TODO
-        return A;
+        int[] counters = new int[N];
+        int max = 0;
+        int lastMaxCounter = 0;
+
+        for (int X : A) {
+            if (X <= N && 1 <= X) {
+                counters[X - 1] = Math.max(counters[X - 1], lastMaxCounter);
+                counters[X - 1] += 1;
+                max = Math.max(max, counters[X - 1]);
+            }
+            if (X == N + 1)
+                lastMaxCounter = max;
+        }
+        for (int i = 0; i < counters.length; i++) {
+            counters[i] = Math.max(counters[i], lastMaxCounter);
+        }
+
+        return counters;
     }
+
 }
