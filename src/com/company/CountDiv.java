@@ -1,7 +1,3 @@
-package com.company;
-
-import java.util.List;
-
 /*
 Write a function:
 
@@ -20,6 +16,9 @@ A and B are integers within the range [0..2,000,000,000];
 K is an integer within the range [1..2,000,000,000];
 A ≤ B.
  */
+
+package com.company;
+
 public class CountDiv {
     public int solution(int A, int B, int K) {
         return B/K - A/K + (A % K == 0 ? 1 : 0);

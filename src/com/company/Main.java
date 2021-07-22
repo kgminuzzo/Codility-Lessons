@@ -29,17 +29,21 @@ public class Main {
         //FROG RIVER (100%)
         //System.out.println(new FrogRiverOne().solution(1, new int[] {1}));
 
-        //TODO
-        //COUNT DIV
+        //COUNT DIV (100%)
         //System.out.println(new CountDiv().solution(10,30,7));
 
         //PERMUTATION CHECK (100%)
         //System.out.println(new PermCheck().solution(new int[] {4, 2, 2, 2}));
 
         //MAX COUNTERS (100%) https://app.codility.com/demo/results/trainingX7ARMA-WQ9/
-        System.out.println(Arrays.toString(new MaxCounters().solution(5, new int[]{3,4,4,6,1,4,4})));
+        //System.out.println(Arrays.toString(new MaxCounters().solution(5, new int[]{3,4,4,6,1,4,4})));
+
 
         //MISSING INTEGER (100%) https://app.codility.com/demo/results/trainingGY9VVF-VDD/
         //System.out.println(new MissingInteger().solution(new int[] {-1,2}));
+
+        //GENOMIC RANGE QUERY
+        System.out.println(new GenomicRangeQuery().solution("CAGCCTA",new int[]{2,5,0}, new int[]{4,5,6}));
     }
+
 }
